@@ -12,7 +12,7 @@ const Menu = () => {
   return (
     <header className="menu">
       <div className="menu-logo">
-        <img src="img/logo-1.png" alt="logo" />
+        <a href="/"><img src="img/logo-1.png" alt="logo" /></a>
       </div>
         <nav ref={navRef}>
             <a href="/">Home</a>
