@@ -53,7 +53,7 @@ const Banner = () => {
           <Col>
             <span className="tagLine">Welcome to my Portfolio</span>
             <h1>
-              {`Hi I'm webdecoded `}
+              {`Hi, I'm webdecoded `}
               <span className="wrap">{text}</span>
             </h1>
             <p>
