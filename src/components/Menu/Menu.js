@@ -12,7 +12,7 @@ const Menu = () => {
   return (
     <header className="menu">
       <div className="menu-logo">
-        <a href="/"><img src="img/logo-1.png" alt="logo" /></a>
+        <a href="/"><img src={process.env.PUBLIC_URL + "/img/logo-1.png"} alt="logo" /></a>
       </div>
         <nav ref={navRef}>
             <a href="/">Home</a>

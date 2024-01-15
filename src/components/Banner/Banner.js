@@ -2,7 +2,6 @@ import "./Banner.css";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import { useState, useEffect } from 'react'
-import TrackVisibility from 'react-on-screen'
 
 const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -10,7 +9,7 @@ const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = ["FullStack Developer", "Java Developer", "Quality Assurance"];
+  const toRotate = ["FullStack Developer", "Java Developer", "Quality Analyst"];
   const period = 2000;
 
   useEffect(() => {
@@ -53,7 +52,7 @@ const Banner = () => {
           <Col>
             <span className="tagLine">Welcome to my Portfolio</span>
             <h1>
-              {`Hi, I'm webdecoded `}
+              {`Hi! I'm Carlos `}
               <span className="wrap">{text}</span>
             </h1>
             <p>
@@ -66,7 +65,7 @@ const Banner = () => {
             </button>
           </Col>
           <Col>
-            <img className="banner-img" src="img/header-img.svg" alt="Headder Img" />
+            <img className="banner-img" src={process.env.PUBLIC_URL + "/img/header-img.svg"} alt="Headder Img" />
           </Col>
         </Row>
       </Container>
